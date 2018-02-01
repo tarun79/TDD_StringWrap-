@@ -8,9 +8,9 @@ namespace TDD_StringWrap
 {
     class StringManip
     {
-        public String WrapMyString(string input, int colmax)
+        public String WrapMyString(string input, Int32 colmax)
         {
-            if (input == null)
+            if ((input == null) || (colmax < 1))
                 return null;
 
             StringBuilder outString = new StringBuilder();

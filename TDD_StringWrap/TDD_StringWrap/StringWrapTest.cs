@@ -50,7 +50,7 @@ namespace TDD_StringWrap
 
             StringManip ObjStringManip = new StringManip();
             input = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
-            expected = "Neque porro\nquisquam est\nqui dolorem\nipsum quia\ndolor sit\namet,\nconsectetur,\nadipisci\nvelit...";
+            expected = "Neque porro\nquisquam est\nqui dolorem\nipsum quia\ndolor sit amet,\nconsectetur,\nadipisci\nvelit...";
 
             // Act
             output = ObjStringManip.WrapMyString(input, colmax);

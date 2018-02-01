@@ -59,5 +59,24 @@ namespace TDD_StringWrap
             Assert.AreEqual(expected, output);
 
         }
+
+        [TestMethod]
+        // Test  The quick brown fox jumped over the lazy dog."
+        public void TestZeroColumnValue()
+        {
+            String input = null, output = null, expected = null;
+            var colmax = 0;
+
+            StringManip ObjStringManip = new StringManip();
+            input = "The quick brown fox jumped over the lazy dog.";
+            expected = null;
+
+            // Act
+            output = ObjStringManip.WrapMyString(input, colmax);
+
+            // Assert
+            Assert.AreEqual(expected, output);
+
+        }
     }
 }

@@ -78,5 +78,24 @@ namespace TDD_StringWrap
             Assert.AreEqual(expected, output);
 
         }
+
+        [TestMethod]
+        // Test Longer than column words "Pneumonoultramicroscopicsilicovolcanoconiosis"
+        public void TestLargerThanColumnWord()
+        {
+            String input = null, output = null, expected = null;
+            var colmax = 0;
+
+            StringManip ObjStringManip = new StringManip();
+            input = "Diseases like Pneumonoultramicroscopicsilicovolcanoconiosis are common amongst mine workers.";
+            expected = null;
+
+            // Act
+            output = ObjStringManip.WrapMyString(input, colmax);
+
+            // Assert
+            Assert.AreEqual(expected, output);
+
+        }
     }
 }
